@@ -16,7 +16,7 @@ import overviewroutes from "./routes/overviewroutes.js"
 dotenv.config()
 const app = express()
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://single-vendor-e-commerce-platform.vercel.app",
     credentials: true
 }))
 app.set("trust proxy", 1);
