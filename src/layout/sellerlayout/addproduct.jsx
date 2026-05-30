@@ -1,9 +1,10 @@
 import { useState } from "react";
 import Sellerbar from "./sellerbar";
+import { useNavigate } from "react-router-dom";
 
 function Addproduct() {
 
-
+  const navigate = useNavigate()
   const [productName, setProductName] = useState("");
   const [category, setCategory] = useState("");
   const [price, setPrice] = useState("");
@@ -42,7 +43,7 @@ function Addproduct() {
 
     if (response.ok) {
       alert("Product added successfully");
-
+      navigate("/sellerproduct")
       setProductName("");
       setCategory("");
       setPrice("");
