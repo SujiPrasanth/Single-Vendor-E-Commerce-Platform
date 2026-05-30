@@ -45,9 +45,8 @@ export const getuser = async (req, res) => {
 
     res.cookie("token", token, {
       httpOnly: true,
-      secure: false,
-      sameSite: "lax",
-      path: "/",
+      secure: true,
+      sameSite: "none",
       maxAge: 60 * 60 * 1000
     });
 
