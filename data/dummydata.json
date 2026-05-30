@@ -1,0 +1,224 @@
+{
+  "datas": [
+    {
+      "id": 1,
+      "title": "Smartphone X1",
+      "category": "mobile",
+      "price": 14999,
+      "description": "High performance smartphone with advanced camera and long battery life.",
+      "shortDescription": "Fast performance phone",
+      "discount": 10,
+      "rating": 4.5,
+      "img": "http://localhost:3000/assests/phone.png"
+    },
+    {
+      "id": 2,
+      "title": "Gaming Laptop Pro",
+      "category": "laptop",
+      "price": 74999,
+      "description": "Powerful gaming laptop designed for high-end graphics and multitasking.",
+      "shortDescription": "High power laptop",
+      "discount": 15,
+      "rating": 4.7,
+      "img": "http://localhost:3000/assests/camera.png"
+    },
+    {
+      "id": 3,
+      "title": "Travel Backpack",
+      "category": "travel",
+      "price": 2499,
+      "description": "Durable travel backpack with multiple compartments and water resistance.",
+      "shortDescription": "Durable travel bag",
+      "discount": 20,
+      "rating": 4.3,
+      "img": "http://localhost:3000/assests/airplan.png"
+    },
+    {
+      "id": 4,
+      "title": "Cricket Bat",
+      "category": "sports",
+      "price": 3999,
+      "description": "Premium quality cricket bat suitable for professional and amateur players.",
+      "shortDescription": "Professional cricket bat",
+      "discount": 12,
+      "rating": 4.4,
+      "img": "http://localhost:3000/assests/baseball.png"
+    },
+    {
+      "id": 5,
+      "title": "airplan Shoes Set",
+      "category": "shoes",
+      "price": 2999,
+      "description": "Durable airplan shoes perfect for everyday training and jogging.",
+      "shortDescription": "Comfortable airplan shoes",
+      "discount": 18,
+      "rating": 4.2,
+      "img": "http://localhost:3000/assests/running.png"
+    },
+    {
+      "id": 6,
+      "title": "Wireless Earbuds",
+      "category": "mobile",
+      "price": 1999,
+      "description": "Compact wireless earbuds with noise cancellation and clear sound.",
+      "shortDescription": "Wireless sound buds",
+      "discount": 25,
+      "rating": 4.6,
+      "img": "http://localhost:3000/assests/phone.png"
+    },
+    {
+      "id": 7,
+      "title": "Ultrabook Laptop",
+      "category": "laptop",
+      "price": 62999,
+      "description": "Lightweight ultrabook ideal for work, travel, and productivity.",
+      "shortDescription": "Lightweight work laptop",
+      "discount": 10,
+      "rating": 4.4,
+      "img": "http://localhost:3000/assests/camera.png"
+    },
+    {
+      "id": 8,
+      "title": "Travel Trolley Bag",
+      "category": "travel",
+      "price": 5499,
+      "description": "Spacious trolley bag with smooth wheels and secure lock.",
+      "shortDescription": "Spacious travel luggage",
+      "discount": 22,
+      "rating": 4.5,
+      "img": "http://localhost:3000/assests/airplan.png"
+    },
+    {
+      "id": 9,
+      "title": "Football",
+      "category": "sports",
+      "price": 999,
+      "description": "High quality football suitable for practice and match play.",
+      "shortDescription": "Professional match football",
+      "discount": 8,
+      "rating": 4.1,
+      "img": "http://localhost:3000/assests/baseball.png"
+    },
+    {
+      "id": 10,
+      "title": "Casual Shoes",
+      "category": "shoes",
+      "price": 2499,
+      "description": "Stylish casual shoes for everyday wear and comfort.",
+      "shortDescription": "Comfortable casual shoes",
+      "discount": 14,
+      "rating": 4.3,
+      "img": "http://localhost:3000/assests/running.png"
+    },
+    {
+      "id": 11,
+      "title": "Smartphone Z5",
+      "category": "mobile",
+      "price": 18999,
+      "description": "Latest smartphone with AMOLED display and fast charging.",
+      "shortDescription": "AMOLED display phone",
+      "discount": 12,
+      "rating": 4.6,
+      "img": "http://localhost:3000/assests/phone.png"
+    },
+    {
+      "id": 12,
+      "title": "Business Laptop",
+      "category": "laptop",
+      "price": 55999,
+      "description": "Reliable laptop designed for office and professional use.",
+      "shortDescription": "Business performance laptop",
+      "discount": 10,
+      "rating": 4.3,
+      "img": "http://localhost:3000/assests/camera.png"
+    },
+    {
+      "id": 13,
+      "title": "Travel Neck Pillow",
+      "category": "travel",
+      "price": 799,
+      "description": "Comfortable neck pillow for long journeys and flights.",
+      "shortDescription": "Comfort travel pillow",
+      "discount": 30,
+      "rating": 4.2,
+      "img": "http://localhost:3000/assests/airplan.png"
+    },
+    {
+      "id": 14,
+      "title": "Badminton Racket",
+      "category": "sports",
+      "price": 2999,
+      "description": "Lightweight badminton racket for speed and control.",
+      "shortDescription": "Lightweight sports racket",
+      "discount": 18,
+      "rating": 4.4,
+      "img": "http://localhost:3000/assests/baseball.png"
+    },
+    {
+      "id": 15,
+      "title": "Sports Sneakers",
+      "category": "shoes",
+      "price": 3999,
+      "description": "High performance sports sneakers with excellent grip and support.",
+      "shortDescription": "High performance sneakers",
+      "discount": 20,
+      "rating": 4.5,
+      "img": "http://localhost:3000/assests/running.png"
+    },
+    {
+      "id": 16,
+      "title": "Gift Hamper Box",
+      "category": "gift",
+      "price": 3499,
+      "description": "Attractive gift hamper suitable for festivals and occasions.",
+      "shortDescription": "Perfect gift hamper",
+      "discount": 35,
+      "rating": 4.6,
+      "img": "http://localhost:3000/assests/gift.png"
+    },
+    {
+      "id": 17,
+      "title": "Smart Watch Gift",
+      "category": "gift",
+      "price": 4999,
+      "description": "Stylish smartwatch gift with fitness tracking features.",
+      "shortDescription": "Smart wearable gift",
+      "discount": 28,
+      "rating": 4.4,
+      "img": "http://localhost:3000/assests/gift.png"
+    },
+    {
+      "id": 18,
+      "title": "Bluetooth Speaker Gift",
+      "category": "gift",
+      "price": 2799,
+      "description": "Portable Bluetooth speaker with deep bass and clarity.",
+      "shortDescription": "Portable music speaker",
+      "discount": 22,
+      "rating": 4.3,
+      "img": "http://localhost:3000/assests/gift.png"
+    },
+    {
+      "id": 19,
+      "title": "airplan Shoes Pro",
+      "category": "shoes",
+      "price": 4499,
+      "description": "Professional airplan shoes designed for athletes and fitness enthusiasts.",
+      "shortDescription": "Professional airplan shoes",
+      "discount": 18,
+      "rating": 4.2,
+      "img": "http://localhost:3000/assests/running.png"
+    },
+    {
+      "id": 20,
+      "title": "airplan Shoes",
+      "category": "sports",
+      "price": 3599,
+      "description": "Comfortable airplan shoes with excellent grip and cushioning.",
+      "shortDescription": "Comfortable airplan shoes",
+      "discount": 20,
+      "rating": 4.5,
+      "img": "http://localhost:3000/assests/baseball.png"
+    }
+  ]
+}
