@@ -27,7 +27,7 @@ const __dirname = path.dirname(__filename);
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-mongoose.connect('mongodb://localhost/multicart')
+mongoose.connect(process.env.MONGODB_URI)
     .then(() => {
         console.log("Db is Connected Succesfully")
     }).catch((err) => {
