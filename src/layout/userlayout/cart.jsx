@@ -16,7 +16,7 @@ function Cart() {
         try {
             setloading(true);
 
-            const res = await fetch("http://localhost:3001/api/getcart", {
+            const res = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/getcart", {
                 method: "GET",
                 credentials: "include"
             });
@@ -41,7 +41,7 @@ function Cart() {
     async function handledelete(productId) {
         try {
             const res = await fetch(
-                `http://localhost:3001/api/deleteproduct/${productId}`,
+                `https://single-vendor-e-commerce-platform.onrender.com/api/deleteproduct/${productId}`,
                 {
                     method: "DELETE",
                     credentials: "include"
@@ -66,7 +66,7 @@ function Cart() {
 
     const updatequantity = async (productId, type) => {
         try {
-            const res = await fetch('http://localhost:3001/api/updatequantity', {
+            const res = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/updatequantity', {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
@@ -110,12 +110,12 @@ function Cart() {
             const quantity = selecteditem.quantity;
             console.log(productId)
             console.log(quantity)
-            const getkey = await fetch('http://localhost:3001/api/getkey', {
+            const getkey = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/getkey', {
                 credentials: "include"
             })
 
             const keydata = await getkey.json()
-            const res = await fetch('http://localhost:3001/api/createorder', {
+            const res = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/createorder', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
@@ -153,7 +153,7 @@ function Cart() {
                 modal: {
                     ondismiss: async function () {
 
-                        await fetch("http://localhost:3001/api/paymentfailed", {
+                        await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/paymentfailed", {
                             method: "POST",
                             headers: { "Content-Type": "application/json", },
                             credentials: "include",
@@ -179,7 +179,7 @@ function Cart() {
         try {
             console.log("VERIFY CALLED");
 
-            const res = await fetch('http://localhost:3001/api/verifypayment', {
+            const res = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/verifypayment', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
@@ -226,7 +226,7 @@ function Cart() {
             <div className="flex flex-col gap-4">
                 {products.map((item, index) => (
                     <div key={index} className="flex flex-col sm:flex-row gap-4 border p-4 rounded-lg shadow"  >
-                        <img src={`http://localhost:3001/${item.productId.productimage}`} alt={item.productId.productName} className="w-full sm:w-24 h-40 sm:h-24 object-contain border rounded" />
+                        <img src={`https://single-vendor-e-commerce-platform.onrender.com/${item.productId.productimage}`} alt={item.productId.productName} className="w-full sm:w-24 h-40 sm:h-24 object-contain border rounded" />
 
                         <div className="flex-1">
                             <h2 className="text-lg md:text-xl font-bold">

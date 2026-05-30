@@ -12,7 +12,7 @@ function Selleroverview() {
 
   const fetchdata = async () => {
     try {
-      const res = await fetch('http://localhost:3001/api/overview', {
+      const res = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/overview', {
         credentials: "include"
       });
 

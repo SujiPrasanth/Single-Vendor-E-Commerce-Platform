@@ -14,7 +14,7 @@ function Navbar() {
       return;
     }
 
-    const res = await fetch("http://localhost:3001/api/logout", {
+    const res = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/logout", {
       method: "POST",
       credentials: "include",
     });

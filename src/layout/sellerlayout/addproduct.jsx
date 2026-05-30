@@ -34,7 +34,7 @@ function Addproduct() {
     formData.append("description", description);
     formData.append("productImage", productImage);
 
-    const response = await fetch("http://localhost:3001/api/addproduct", {
+    const response = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/addproduct", {
       method: "POST",
       credentials: "include",
       body: formData,

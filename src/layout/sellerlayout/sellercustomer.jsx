@@ -8,7 +8,7 @@ function Sellercustomer() {
 
   const fetchcustomer = async () => {
     try {
-      const res = await fetch('http://localhost:3001/api/getcustomers', {
+      const res = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/getcustomers', {
         credentials: "include"
       })
       const data = await res.json()

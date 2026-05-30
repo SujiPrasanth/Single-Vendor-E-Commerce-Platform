@@ -15,7 +15,7 @@ function Sellerbar() {
     if (!confirmlogout) {
       return;
     }
-    const res = await fetch("http://localhost:3001/api/sellerlogout", {
+    const res = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/sellerlogout", {
       method: "POST",
       credentials: "include"
     });

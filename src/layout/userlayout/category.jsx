@@ -17,7 +17,7 @@ function Category() {
 
     const fetchproduct = async () => {
         try {
-            const res = await fetch(`http://localhost:3001/api/category/${id}`)
+            const res = await fetch(`https://single-vendor-e-commerce-platform.onrender.com/api/category/${id}`)
             const data = await res.json()
 
             if (!res.ok) {
@@ -70,7 +70,7 @@ function Category() {
             <div className="grid md:grid-cols-3 grid-cols-2 lg:grid-cols-3 gap-3 my-4">
                 {displayproducts.map((item) => (
                     <div key={item._id} className='hover:shadow-xl cursor-pointer shadow p-4' onClick={() => navigate(`/product/${item._id}`)} >
-                        <img src={`http://localhost:3001/${item.productimage}`} alt="" className=''/>
+                        <img src={`https://single-vendor-e-commerce-platform.onrender.com/${item.productimage}`} alt="" className=''/>
                         <div className='flex flex-col justify-center items-center'>
                             <p className='font-semibold text-xl mt-1'>{item.productName}</p>
                             <p className='text-xl line-through'>{item.price}</p>

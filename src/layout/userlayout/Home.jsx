@@ -21,7 +21,7 @@ function Home() {
     useEffect(() => {
         async function fetchproducts() {
             try {
-                const res = await fetch("http://localhost:3001/api/getallproducts")
+                const res = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/getallproducts")
 
                 if (!res.ok) {
                     throw new Error("Failed to fetch products")
@@ -107,7 +107,7 @@ function Home() {
                     <div className="grid lg:grid-cols-7 md:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-4">
                         {orderbyprice.map((item) => (
                             <div key={item._id} className="border rounded-lg p-2 flex flex-col items-center cursor-pointer hover:shadow-lg" onClick={() => { navigate(`/product/${item._id}`) }}>
-                                <img src={`http://localhost:3001/${item.productimage}`} alt={item.productName} className="h-24 w-24 object-cover"
+                                <img src={`https://single-vendor-e-commerce-platform.onrender.com/${item.productimage}`} alt={item.productName} className="h-24 w-24 object-cover"
                                 />
                                 <p className="font-semibold text-center mt-2">
                                     {item.productName}
@@ -139,7 +139,7 @@ function Home() {
                                     {cat.products.map((item) => (
                                         <div key={item._id} className="border  rounded-lg p-2 flex flex-col items-center cursor-pointer hover:shadow-lg"
                                             onClick={() => { navigate(`/product/${item._id}`) }}>
-                                            <img src={`http://localhost:3001/${item.productimage}`} alt={item.price} className="h-24 w-24 object-cover" />
+                                            <img src={`https://single-vendor-e-commerce-platform.onrender.com/${item.productimage}`} alt={item.price} className="h-24 w-24 object-cover" />
 
                                             <p className="font-semibold text-center mt-2">{item.productName}</p>
                                             <p className="text-red-500 font-bold mt-1">{item.discount}% OFF</p>

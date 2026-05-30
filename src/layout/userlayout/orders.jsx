@@ -10,7 +10,7 @@ function Orders() {
 
     const fetchOrders = async () => {
         try {
-            const res = await fetch("http://localhost:3001/api/getuserorders", {
+            const res = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/getuserorders", {
                 credentials: "include"
             });
 
@@ -47,7 +47,7 @@ function Orders() {
                 {orders.map((order) => (
                     <div key={order._id} className="bg-white border rounded-xl shadow p-4 flex flex-col md:flex-row gap-4">
 
-                        <img src={`http://localhost:3001/${order.productId?.productimage}`} alt={order.productId?.productName} className="w-full md:w-32 h-40 md:h-32 object-contain border rounded" />
+                        <img src={`https://single-vendor-e-commerce-platform.onrender.com/${order.productId?.productimage}`} alt={order.productId?.productName} className="w-full md:w-32 h-40 md:h-32 object-contain border rounded" />
 
                         <div className="flex-1 space-y-2">
 

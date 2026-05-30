@@ -10,7 +10,7 @@ function Sellerorder() {
 
   const fetchorders = async () => {
     try {
-      const res = await fetch('http://localhost:3001/api/getorders', {
+      const res = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/getorders', {
         method: "GET",
         credentials: "include"
       })
@@ -32,7 +32,7 @@ function Sellerorder() {
     try {
       console.log(id),
         console.log(deliverystatus)
-      const res = await fetch(`http://localhost:3001/api/updatedeliverystatus/${id}`, {
+      const res = await fetch(`https://single-vendor-e-commerce-platform.onrender.com/api/updatedeliverystatus/${id}`, {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         credentials: "include",

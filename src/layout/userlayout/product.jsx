@@ -14,7 +14,7 @@ function Product() {
 
     const fetchproduct = async () => {
         try {
-            const res = await fetch(`http://localhost:3001/api/product/${id}`)
+            const res = await fetch(`https://single-vendor-e-commerce-platform.onrender.com/api/product/${id}`)
             const data = await res.json()
             console.log(data)
             setProdetails(data.product)
@@ -35,7 +35,7 @@ function Product() {
 
     async function handleAddToCart(product, qty) {
 
-        const res = await fetch("http://localhost:3001/api/addtocart", {
+        const res = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/addtocart", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             credentials: "include",
@@ -67,12 +67,12 @@ function Product() {
                 return
             }
             console.log(orderdeatils)
-            const getkey = await fetch('http://localhost:3001/api/getkey', {
+            const getkey = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/getkey', {
                 credentials: "include"
             })
 
             const keydata = await getkey.json()
-            const res = await fetch('http://localhost:3001/api/createorder', {
+            const res = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/createorder', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
@@ -109,7 +109,7 @@ function Product() {
                 modal: {
                     ondismiss: async function () {
 
-                        await fetch("http://localhost:3001/api/paymentfailed", {
+                        await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/paymentfailed", {
                             method: "POST",
                             headers: { "Content-Type": "application/json", },
                             credentials: "include",
@@ -134,7 +134,7 @@ function Product() {
 
     const verifypayment = async (response) => {
         try {
-            const res = await fetch('http://localhost:3001/api/verifypayment', {
+            const res = await fetch('https://single-vendor-e-commerce-platform.onrender.com/api/verifypayment', {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 credentials: "include",
@@ -167,7 +167,7 @@ function Product() {
             <div className="grid md:grid-cols-6 gap-12">
 
                 <div className="border rounded-xl lg:col-span-2 md:col-span-3 p-4">
-                    <img src={`http://localhost:3001/${prodetails.productimage}`} alt={prodetails.productName} className="w-full md:h-[50vh] h-[30vh] object-contain" />
+                    <img src={`https://single-vendor-e-commerce-platform.onrender.com/${prodetails.productimage}`} alt={prodetails.productName} className="w-full md:h-[50vh] h-[30vh] object-contain" />
 
                     <div className="flex justify-center items-center gap-4 my-4">
                         <button onClick={decreaseqty} className="px-4 py-2 bg-gray-300 text-xl">-</button>

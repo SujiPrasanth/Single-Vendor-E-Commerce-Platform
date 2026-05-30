@@ -14,7 +14,7 @@ function Login() {
       return;
     }
 
-    const res = await fetch("http://localhost:3001/api/login", {
+    const res = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       credentials: "include",

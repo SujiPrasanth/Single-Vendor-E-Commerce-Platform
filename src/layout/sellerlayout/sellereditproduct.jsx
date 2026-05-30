@@ -19,7 +19,7 @@ function Sellereditproduct() {
 
   useEffect(() => {
     async function fetchproduct() {
-      const res = await fetch(`http://localhost:3001/api/products/${id}`, {
+      const res = await fetch(`https://single-vendor-e-commerce-platform.onrender.com/api/products/${id}`, {
         method: "GET",
         credentials: "include"
       });
@@ -57,7 +57,7 @@ function Sellereditproduct() {
       formData.append("productImage", productImage);
     }
 
-    const res = await fetch(`http://localhost:3001/api/updateproduct/${id}`, {
+    const res = await fetch(`https://single-vendor-e-commerce-platform.onrender.com/api/updateproduct/${id}`, {
       method: "PUT",
       body: formData,
     });
@@ -172,7 +172,7 @@ function Sellereditproduct() {
                 </label>
 
                 {oldImage && (
-                  <img src={`http://localhost:3001/${oldImage}`} className="h-20 mb-2 rounded" alt="" />
+                  <img src={`https://single-vendor-e-commerce-platform.onrender.com/${oldImage}`} className="h-20 mb-2 rounded" alt="" />
                 )}
 
                 <input type="file" className="border rounded w-full p-2"

@@ -9,7 +9,7 @@ function Signup() {
   async function handleSubmit(e) {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:3001/api/signup", {
+    const response = await fetch("https://single-vendor-e-commerce-platform.onrender.com/api/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ useremail, password }),

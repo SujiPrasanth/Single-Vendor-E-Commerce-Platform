@@ -10,7 +10,7 @@ function SellerProduct() {
 
   useEffect(() => {
     async function fetchproducts() {
-      const res = await fetch(`http://localhost:3001/api/getproducts/`, {
+      const res = await fetch(`https://single-vendor-e-commerce-platform.onrender.com/api/getproducts/`, {
         method: "GET",
         credentials: "include"
       });
@@ -28,7 +28,7 @@ function SellerProduct() {
     const confirmDelete = window.confirm("Are you sure you want to delete this product?");
     if (!confirmDelete) return;
 
-    const res = await fetch(`http://localhost:3001/api/product/${id}`, {
+    const res = await fetch(`https://single-vendor-e-commerce-platform.onrender.com/api/product/${id}`, {
       method: "DELETE",
     });
 
@@ -77,7 +77,7 @@ function SellerProduct() {
                     <tr key={product._id} className="text-center">
 
                       <td className="border p-2">
-                        <img src={`http://localhost:3001/${product.productimage}`} alt="" className="h-10 w-10 object-cover mx-auto rounded" />
+                        <img src={`https://single-vendor-e-commerce-platform.onrender.com/${product.productimage}`} alt="" className="h-10 w-10 object-cover mx-auto rounded" />
                       </td>
 
                       <td className="border p-2">{product.productName}</td>
@@ -123,7 +123,7 @@ function SellerProduct() {
 
             <div className="flex md:flex-row flex-col gap-4">
 
-              <img src={`http://localhost:3001/${selectedproduct.productimage}`} className="w-1/3 object-cover rounded" alt="" />
+              <img src={`https://single-vendor-e-commerce-platform.onrender.com/${selectedproduct.productimage}`} className="w-1/3 object-cover rounded" alt="" />
 
               <div className="space-y-1 text-sm md:text-base">
                 <p><b>Name:</b> {selectedproduct.productName}</p>
