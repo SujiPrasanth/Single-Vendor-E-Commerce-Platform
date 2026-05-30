@@ -52,6 +52,28 @@ The application follows RESTful API architecture and implements secure authentic
 
 ---
 
+## Demo Video
+
+https://github.com/user-attachments/assets/eeb5d3d9-0704-4762-a608-63f5a1878087
+
+---
+
+## Live Project
+
+Experience the Live Application
+
+### Frontend
+https://single-vendor-e-commerce-platform.vercel.app
+
+> Note: For the best experience, please use Microsoft Edge or enable third-party cookies in Chrome, as Chrome may block cross-site authentication cookies in deployed applications.
+
+### Backend API
+https://single-vendor-e-commerce-platform.onrender.com
+
+> Note: Backend may take a few seconds to respond initially because it is hosted on Render free tier.
+
+---
+
 ## Technologies Used
 
 ### Frontend
