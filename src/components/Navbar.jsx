@@ -97,7 +97,7 @@ function Navbar() {
         )}
       </nav>
 
-      <Outlet />
+      
     </>
   );
 }
