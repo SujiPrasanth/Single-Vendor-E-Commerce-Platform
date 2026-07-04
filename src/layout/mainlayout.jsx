@@ -5,6 +5,7 @@ function Mainlayout() {
         <>
         <div>
            <Navbar />
+            <Outlet />
         </div>
         </>
     )
