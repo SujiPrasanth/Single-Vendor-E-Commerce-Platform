@@ -22,19 +22,20 @@ import Orders from "./layout/userlayout/orders"
 
 const router = createBrowserRouter([
     {
+        path:'/',
         element: <Mainlayout />,
         children: [
             { index: true, element: <Home /> },
-            { path: "/home", element: <Home /> },
+            { path: "home", element: <Home /> },
             { path: "category/:id", element: <Category /> },
             { path: "product/:id", element: <Product /> },
-            { path: '/cart', element: <Cart /> },
+            { path: 'cart', element: <Cart /> },
             { path: "login", element: <Login /> },
             { path: "signup", element: <Signup /> },
             { path: "sellerlogin", element: <Sellerlogin /> },
             { path: "sellersignup", element: <Sellersignup /> },
-            { path: '/paymentsuccess', element: <PaymentSuccess /> },
-            { path: '/orders', element: <Orders /> }
+            { path: 'paymentsuccess', element: <PaymentSuccess /> },
+            { path: 'orders', element: <Orders /> }
         ]
     },
     {
