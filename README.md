@@ -65,7 +65,7 @@ Experience the Live Application
 ### Frontend
 https://single-vendor-e-commerce-platform.vercel.app
 
-> Note: For the best experience, please use Microsoft Edge or enable third-party cookies in Chrome, as Chrome may block cross-site authentication cookies in deployed applications.
+> Note: For the best experience, please use Microsoft Edge or enable third-party cookies in Chrome, as  Chrome may block cross-site authentication cookies in deployed applications.
 
 ### Backend API
 https://single-vendor-e-commerce-platform.onrender.com
